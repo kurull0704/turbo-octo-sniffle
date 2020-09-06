@@ -1,58 +1,132 @@
 <!DOCTYPE html>
 <html lang="rus">
+
 <head>
     <meta charset="UTF-8">
     <title>НОВОСТИ</title>
+    <link rel="stylesheet" href="style.kurull.css" type="text/css" />
 </head>
+
 <body>
-    <h1>ЛУЧШИЕ В МИРЕ НОВОСТИ</h1>
-    <p>Заходи и будь в курсе, что твориться в мире.</p>
-        <a href="https://google.com">Политика</a>
-        <a href="https://google.com">Технологии</a>
-        <a href="https://google.com">Спорт</a>
-    <form>
-        <p><input type="search" name="q" placeholder="Поиск по сайту"> 
-           <input type="submit" value="Найти"></p>
-    </form>
-    <form>
-        <fieldset>
-            <label for="email">Подпишись на рассылку</label>
-            <input name="email" type="email" required placeholder="mail@google.com">
-        </fieldset>
-    </form>
-    <a href="https://google.com">Мобильная версия</a>
-    <hr>
-    <a href="https://google.com"><p>Сова 1</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Northern_Spotted_Owl.USFWS.jpg/270px-Northern_Spotted_Owl.USFWS.jpg" alt="Сова 1" width="250" height="400"></a>
-    <a href="https://google.com"><p>Сова 2</p><img src="https://img.gazeta.ru/files3/213/7775213/baykus-jpg-6a0392-pic905-895x505-25930.jpg" alt="Сова 2" width="400" height="250"></a>
-    <a href="https://google.com"><p>Сова 3</p><img src="https://s1.stc.all.kpcdn.net/putevoditel/projectid_103889/images/tild3130-3036-4132-b534-313461616261__barn-owl-2550068_128.jpg" alt="Сова 3" width="400" height="250"></a>
-    <a href="https://google.com"><p>Сова 4</p><img src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1489315689_sova_krasivaya.jpg" alt="Сова 4" width="400" height="250"></a>
-    <a href="https://google.com"><p>Сова 5</p><img src="https://img.gazeta.ru/files3/105/7775105/0_104ea4_24b192e5_orig.jpg" alt="Сова 5" width="400" height="250"></a>
+    <header>
+        <div class="navigation">
+            <nav>
+                <ul class="top-menu">
+                    <a href="https://google.com">Политика</a>
+                    <a href="https://google.com">Технологии</a>
+                    <a href="https://google.com">Спорт</a>
+                </ul>
+            </nav>
+            <form id="search">
+                <p><input type="search" name="q" placeholder="Поиск по сайту">
+                    <input type="submit" value="Найти"></p>
+            </form>
+        </div>
+        <div class="body-cover">
+            <div class="title">
+                <h1 class="name">ЛУЧШИЕ В МИРЕ НОВОСТИ</h1>
+                <h5 id="tagline">Заходи и будь в курсе, что твориться в мире.</h5>
+            </div>
+        </div>
+        <div class="subscribe-block">
+            <div>
+                <label for="email">Подпишись на рассылку</label>
+            </div>
+            <div>
+                <input name="email" type="email" required placeholder="mail@google.com">
+                <button>ПОДПИСАТЬСЯ</button>
+            </div>
+        </div>
+        <a href="https://google.com">Мобильная версия</a>
+        <hr>
+    </header>
+    <div class="container">
+        <div class="first-news">
+            <div class="cartoon">
+                <a class="center" href="https://google.com">
+                    <p class="img-label">Сова 1</p><img class="cartoon-img"
+                        src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1489315689_sova_krasivaya.jpg">
+                </a>
+            </div>
+            <div class="cartoon">
+                <a class="center cartoon-img small" href="https://google.com">
+                    <p class="img-label">Сова 2</p><img class="filled"
+                        src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1489315689_sova_krasivaya.jpg">
+                </a>
+                <a class="center cartoon-img small" href="https://google.com">
+                    <p class="img-label">Сова 3</p><img class="filled"
+                        src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1489315689_sova_krasivaya.jpg">
+                </a>
+            </div>
+        </div>
+    <div class="second-news">
+    <a href="https://google.com">
+        <p>Сова 4</p><img src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1489315689_sova_krasivaya.jpg"
+            alt="Сова 4" width="400" height="250">
+    </a>
+    <a href="https://google.com">
+        <p>Сова 5</p><img src="https://img.gazeta.ru/files3/105/7775105/0_104ea4_24b192e5_orig.jpg" alt="Сова 5"
+            width="400" height="250">
+    </a>
+</div>
     <fieldset>
         <a href="https://google.com">LOAD MORE</a>
-    </fieldset>   
-    <hr> 
+    </fieldset>
+    
+    <hr>
     <p>ПОПУЛЯРНОЕ</p>
-    <a href="https://google.com"><p>Сова 6</p><img src="https://vokrugsveta.ua/wp-content/uploads/2019/09/shutterstock_407860144.jpg" alt="Сова 6" width="250" height="400"></a>
-    <a href="https://google.com"><p>Сова 7</p><img src="https://lh3.googleusercontent.com/proxy/daIGUXbkbSvS8Xr4IOiNoqT8kAvsea80LU7DQ4Tz239xRXsEtNZNAhTaczVvP5ywzai9I4aoHXUXZP48uBFqBIXlCDs" alt="Сова 2" width="400" height="250"></a>
-    <a href="https://google.com"><p>Сова 8</p><img src="https://bigpicture.ru/wp-content/uploads/2015/03/owls15-800x5471.jpg" alt="Сова 3" width="400" height="250"></a>
+    <a href="https://google.com">
+        <p>Сова 6</p><img src="https://vokrugsveta.ua/wp-content/uploads/2019/09/shutterstock_407860144.jpg"
+            alt="Сова 6" width="250" height="400">
+    </a>
+    <a href="https://google.com">
+        <p>Сова 7</p><img
+            src="https://lh3.googleusercontent.com/proxy/daIGUXbkbSvS8Xr4IOiNoqT8kAvsea80LU7DQ4Tz239xRXsEtNZNAhTaczVvP5ywzai9I4aoHXUXZP48uBFqBIXlCDs"
+            alt="Сова 2" width="400" height="250">
+    </a>
+    <a href="https://google.com">
+        <p>Сова 8</p><img src="https://bigpicture.ru/wp-content/uploads/2015/03/owls15-800x5471.jpg" alt="Сова 3"
+            width="400" height="250">
+    </a>
     <fieldset>
         <a href="https://google.com">BROWSE ALL POSTS</a>
-    </fieldset> 
+    </fieldset>
     <hr>
     <form action="select1.php" method="post">
         <label for="email">Новое из категории</label>
         <select атрибуты>
-            <option атрибуты>Политика</option> 
-            <option атрибуты>Технологии</option> 
-            <option атрибуты>Спорт</option> 
-          </select>
+            <option атрибуты>Политика</option>
+            <option атрибуты>Технологии</option>
+            <option атрибуты>Спорт</option>
+        </select>
     </form>
-    <a href="https://google.com"><p>Сова 9</p><img src="https://vokrugsveta.ua/wp-content/uploads/2019/09/shutterstock_407860144.jpg" alt="Сова 6" width="250" height="400"></a>
-    <a href="https://google.com"><p>Сова 10</p><img src="https://lh3.googleusercontent.com/proxy/daIGUXbkbSvS8Xr4IOiNoqT8kAvsea80LU7DQ4Tz239xRXsEtNZNAhTaczVvP5ywzai9I4aoHXUXZP48uBFqBIXlCDs" alt="Сова 2" width="400" height="250"></a>
-    <a href="https://google.com"><p>Сова 11</p><img src="https://bigpicture.ru/wp-content/uploads/2015/03/owls15-800x5471.jpg" alt="Сова 3" width="400" height="250"></a>
+    <a href="https://google.com">
+        <p>Сова 9</p><img src="https://vokrugsveta.ua/wp-content/uploads/2019/09/shutterstock_407860144.jpg"
+            alt="Сова 6" width="250" height="400">
+    </a>
+    <a href="https://google.com">
+        <p>Сова 10</p><img
+            src="https://lh3.googleusercontent.com/proxy/daIGUXbkbSvS8Xr4IOiNoqT8kAvsea80LU7DQ4Tz239xRXsEtNZNAhTaczVvP5ywzai9I4aoHXUXZP48uBFqBIXlCDs"
+            alt="Сова 2" width="400" height="250">
+    </a>
+    <a href="https://google.com">
+        <p>Сова 11</p><img src="https://bigpicture.ru/wp-content/uploads/2015/03/owls15-800x5471.jpg" alt="Сова 3"
+            width="400" height="250">
+    </a>
     <hr>
-    <a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"  width="30" height="30"></a>
-    <a href="https://twitter.com"><img src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png" width="32" height="30"></a>
-    <a href="https://www.facebook.com/"><img src="https://img2.freepng.ru/20180327/xhw/kisspng-facebook-inc-logo-computer-icons-like-button-facebook-icon-5aba7ea722c705.2717982415221715591425.jpg" width="27" height="30"></a>
+    </div>
+    <footer>
+        <div class="social-box">
+            <a href="https://www.instagram.com"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png"
+                    width="30" height="30"></a>
+            <a href="https://twitter.com"><img
+                    src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9f/Twitter_bird_logo_2012.svg/1200px-Twitter_bird_logo_2012.svg.png"
+                    width="32" height="30"></a>
+            <a href="https://www.facebook.com/"><img
+                    src="https://img2.freepng.ru/20180327/xhw/kisspng-facebook-inc-logo-computer-icons-like-button-facebook-icon-5aba7ea722c705.2717982415221715591425.jpg"
+                    width="27" height="30"></a>
+    </footer>
 </body>
+
 </html>
