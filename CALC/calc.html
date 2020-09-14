@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="css/calc.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Quicksand&display=swap">
 </head>
 <body>
-    <form class="calc">
+    <form id="calc">
         <div class="result">
             <input class="text" type="text" name="result">
         </div>
         <div class="functions">
-            <input type="button" name="a/c" value="A/C">
-            <input type="button" name="+/-" value="+/-">
-            <input type="button" name="percent" value="%">
+            <input class="button__fun" type="button" name="ac" value="A/C">
+            <input class="button__fun" type="button" name="+/-" value="+/-">
+            <input class="button__fun" type="button" name="percent" value="%">
         </div>
         <div class="numbers">
-            <input type="button" name="one" value="1">
-            <input type="button" name="two" value="2">
-            <input type="button" name="three" value="3">
-            <input type="button" name="four" value="4">
-            <input type="button" name="five" value="5">
-            <input type="button" name="six" value="6">
-            <input type="button" name="seven" value="7">
-            <input type="button" name="eitgh" value="8">
-            <input type="button" name="nine" value="9">
-            <input  class="zero" type="button" name="nul" value="0">
-            <input  class="point"  type="button" name="point" value=".">
+            <input class="button__num" type="button" name="one" value="1">
+            <input class="button__num" type="button" name="two" value="2">
+            <input class="button__num" type="button" name="three" value="3">
+            <input class="button__num" type="button" name="four" value="4">
+            <input class="button__num" type="button" name="five" value="5">
+            <input class="button__num" type="button" name="six" value="6">
+            <input class="button__num" type="button" name="seven" value="7">
+            <input class="button__num" type="button" name="eight" value="8">
+            <input class="button__num" type="button" name="nine" value="9">
+            <input  class="button__num zero" type="button" name="zero" value="0">
+            <input  class="button__num point"  type="button" name="point" value=".">
         </div>
         <div class="operations">
-            <input type="button" name="share" value="/">
-            <input type="button" name="multiply" value="х">
-            <input type="button" name="minus" value="-">
-            <input type="button" name="plus" value="+">
-            <input type="button" name="equal" value="=">
+            <input class="button__oper" type="button " name="share" value="/">
+            <input class="button__oper" type="button " name="multiply" value="*">
+            <input class="button__oper" type="button " name="minus" value="-">
+            <input class="button__oper" type="button " name="plus" value="+">
+            <input class="button__oper" type="button " name="equal" value="=">
         </div>
     </form>
     <script src="calc.js"></script> 
