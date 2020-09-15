@@ -9,33 +9,37 @@
 </head>
 <body>
     <form id="calc">
+
         <div class="result">
             <input class="text" type="text" name="result">
         </div>
-        <div class="functions">
-            <input class="button__fun" type="button" name="ac" value="A/C">
-            <input class="button__fun" type="button" name="+/-" value="+/-">
-            <input class="button__fun" type="button" name="percent" value="%">
+        <div class="buttons1">
+            <div class="functions">
+                <input class="button button__fun" type="button" name="ac" value="A/C">
+                <input class="button button__fun" type="button" name="+/-" value="+/-">
+                <input class="button button__fun" type="button" name="percent" value="%">
+            </div>
+            <div class="numbers">
+                <input class="button button__num" type="button" name="one" value="1">
+                <input class="button button__num" type="button" name="two" value="2">
+                <input class="button button__num" type="button" name="three" value="3">
+                <input class="button button__num" type="button" name="four" value="4">
+                <input class="button button__num" type="button" name="five" value="5">
+                <input class="button button__num" type="button" name="six" value="6">
+                <input class="button button__num" type="button" name="seven" value="7">
+                <input class="button button__num" type="button" name="eight" value="8">
+                <input class="button button__num" type="button" name="nine" value="9">
+                <input  class="button button__num zero" type="button" name="zero" value="0">
+                <input  class="button button__num point"  type="button" name="point" value=".">
+            </div>
         </div>
-        <div class="numbers">
-            <input class="button__num" type="button" name="one" value="1">
-            <input class="button__num" type="button" name="two" value="2">
-            <input class="button__num" type="button" name="three" value="3">
-            <input class="button__num" type="button" name="four" value="4">
-            <input class="button__num" type="button" name="five" value="5">
-            <input class="button__num" type="button" name="six" value="6">
-            <input class="button__num" type="button" name="seven" value="7">
-            <input class="button__num" type="button" name="eight" value="8">
-            <input class="button__num" type="button" name="nine" value="9">
-            <input  class="button__num zero" type="button" name="zero" value="0">
-            <input  class="button__num point"  type="button" name="point" value=".">
-        </div>
+        
         <div class="operations">
-            <input class="button__oper" type="button " name="share" value="/">
-            <input class="button__oper" type="button " name="multiply" value="*">
-            <input class="button__oper" type="button " name="minus" value="-">
-            <input class="button__oper" type="button " name="plus" value="+">
-            <input class="button__oper" type="button " name="equal" value="=">
+            <input class="button button__oper" type="button " name="share" value="/">
+            <input class="button button__oper" type="button " name="multiply" value="*">
+            <input class="button button__oper" type="button " name="minus" value="-">
+            <input class="button button__oper" type="button " name="plus" value="+">
+            <input class="button button__oper equal" type="button " name="equal" value="=">
         </div>
     </form>
     <script src="calc.js"></script> 

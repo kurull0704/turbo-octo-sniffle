@@ -1,32 +1,35 @@
 
-#calc {
+/* Grid Вариант */
+
+    /* #calc {
     margin: 0 auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 600px;
     height: 1000px;
-   display: grid;
-   grid-template: repeat(6, 1fr) / repeat(4, 1fr); 
-   text-size-adjust: 50px;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr); 
 }
 
 .result {
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-size: 100px;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    font-size: 100px;
 }
 
 .text {
     height: 100%;
-    width: calc(100% - 50px);
+    width: calc(100% - 58px);
     padding: 0 25px;
+    font-size: 50px;
     border: none;
-    background-color: rgb(255, 255, 255);
-    color: rgb(153, 67, 67);
+    background-color: rgb(122, 111, 111);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 4px double black;
 
 }
 
 .functions {
-    justify-content: stretch;
     grid-column: 1 / 4;
     grid-row: 2 / 3; 
     display: grid;
@@ -34,7 +37,6 @@
 }
 
 .numbers {
-    justify-content: stretch;
     grid-column: 1 / 4;
     grid-row: 3 / 7; 
     display: grid;
@@ -42,7 +44,6 @@
 }
 
 .operations {
-    justify-content: stretch;
     grid-column: 4 / 5;
     grid-row: 2 / 7; 
     display: grid;
@@ -50,22 +51,124 @@
 }
 
 .zero {
-    justify-content: stretch;
     grid-column: 1 / 3;
     grid-row: 4 / 5; 
 }
 
 .button__num {
     background-color: rgb(74, 128, 95);
+    font-size: 50px;
+    border-radius: 10px;
 }
 
-.button__oper {
-    background-color: red
-}
 
 .button__fun {
-    background-color: rgb(99, 143, 132)
+    background-color: rgb(99, 143, 132);
+    font-size: 50px;
+    border-radius: 10px;
+} 
+
+.button__oper {
+    background-color: red;
+    border-radius: 10px;
+}  */
+
+
+/* font-size: 50px; */ 
+
+/* font-size перетащить в .button__oper и разкоментить(сделал так, 
+потому что не смог закоментить весь код с гридами, когда в нем есть закоменченые элементы) */
+
+    
+
+
+/* Flex Вариант(Сначала нужно закоментить Grid Вариант) */
+
+#calc {
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
 }
 
+.text {
+    height: 175px;
+    width: calc(100% - 50px);
+    font-size: 100px;
+    padding: 0 25px;
+    background-color:rgb(122, 111, 111);
+    border: 1px;
+    color: white;
+    border-radius: 25px 25px 0 0;
+    }
 
+    .text:focus {
+        outline: none;
+    }
+    
+    .buttons1 {
+        width: 75%;
+        height: 525px;
+    }
+    
+    .numbers {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        height: 80%;
+    }
 
+    .functions {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 20%;
+    }
+    
+    .operations {
+        width: 25%;
+        display: flex;
+        height: 525px;
+    }
+    
+    .button__num {
+        background-color: rgb(74, 128, 95);
+        flex-basis: 150px;
+        height: 25%;
+    }
+
+    .button__fun {  
+        flex-basis: 150px;
+    }
+    
+    .zero {
+        flex-basis: 300px;
+        border-radius: 0 0 0 20px;
+    }
+    
+    .number__button {
+        background-color: gray;
+        width: 150px;
+    }
+    
+    div.operations {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .button__oper {
+        background-color: red;
+        width: 145px;
+        margin: 0 auto;
+        height: 20%;
+
+    }
+    
+    .equal {
+        border-radius: 0 0 25px 0;
+    }
