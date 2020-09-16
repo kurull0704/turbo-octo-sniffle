@@ -1,7 +1,7 @@
 
 /* Grid Вариант */
 
-    /* #calc {
+    #calc {
     margin: 0 auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 600px;
@@ -71,7 +71,7 @@
 .button__oper {
     background-color: red;
     border-radius: 10px;
-}  */
+} 
 
 
 /* font-size: 50px; */ 
@@ -84,7 +84,7 @@
 
 /* Flex Вариант(Сначала нужно закоментить Grid Вариант) */
 
-#calc {
+/* #calc {
     width: 600px;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
@@ -171,4 +171,4 @@
     
     .equal {
         border-radius: 0 0 25px 0;
-    }
+    } */
